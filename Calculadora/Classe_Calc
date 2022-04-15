@@ -1,0 +1,20 @@
+package javaapplication1;
+
+
+public class Calculadora {
+    double resultado;
+	double operando1, operando2;
+
+	void somar(){
+		resultado = operando1+operando2;
+	}
+	void subtrair(){
+		resultado = operando1-operando2;
+	}
+	void multiplicar(){
+		resultado = operando1*operando2;
+	}
+	void dividir(){
+		resultado = operando1/operando2;
+	}
+}
