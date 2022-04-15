@@ -1,0 +1,13 @@
+package poo;
+public class POO {
+    public static void main(String[] args) {
+        
+        Radio c1 = new Radio();
+        c1.volume(11);
+ //       System.out.println("Volume " + c1.volume);
+        c1.ajustarFreq(900.0f);
+        
+        
+    }
+    
+}
