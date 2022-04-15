@@ -1,0 +1,31 @@
+package aula011;
+public class Aula011 {
+    public static void main(String[] args) {
+    
+       // Pessoa a1 = new Pessoa(); //nao posso instaciar, pois a classe é abstract
+        
+    /*   Visitante v1 = new Visitante();
+        v1.setNome("Alves");
+        v1.setIdade(22);
+        v1.setSexo("M");
+        System.out.println(v1.toString()); */
+    
+    
+    Aluno a1 = new Aluno();
+    a1.setNome("Claudio");
+    a1.setMatricula(1111);
+    a1.setCurso("BCC");
+    a1.setIdade(16);
+    a1.setSexo("M");
+    a1.pagarMensalidade();
+    
+    Bolsista b1 = new Bolsista();
+    b1.setMatricula(1222);
+    b1.setNome("Jubileu");
+    b1.setBolsa(12.5f);
+    b1.pagarMensalidade();
+        
+        
+    }
+    
+}
