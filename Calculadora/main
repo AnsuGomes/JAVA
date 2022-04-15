@@ -1,0 +1,51 @@
+package javaapplication1;
+import javax.swing.JOptionPane;
+import java.lang.Double;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+       
+Calculadora calc1 = new Calculadora();
+String opcao;
+                
+JOptionPane.showMessageDialog(null, "Bem-Vindo à nossa aplicação!", "CALCULADORA", JOptionPane.INFORMATION_MESSAGE);
+opcao = JOptionPane.showInputDialog("Escolha uma opção: \n1- Soma:\n2 - Subtracao:\n3 - Multiplicar:\n4 - Dividir:");
+
+int opt;
+opt = Integer.parseInt(opcao);
+
+if(opt == 1){
+    calc1.operando1=Double.valueOf(JOptionPane.showInputDialog("Digite o operando 1:")); 
+    calc1.operando2=Double.valueOf(JOptionPane.showInputDialog("Digite o operando 2:"));
+    
+    double resultado = calc1.operando1 + calc1.operando2;
+    String msg = "O resultado é: "+resultado;
+    JOptionPane.showMessageDialog(null, msg);
+    }
+if(opt == 2){
+    calc1.operando1=Double.valueOf(JOptionPane.showInputDialog("Digite o operando 1:")); 
+    calc1.operando2=Double.valueOf(JOptionPane.showInputDialog("Digite o operando 2:"));
+    
+    double resultado = calc1.operando1 - calc1.operando2;
+    String msg = "O resultado é: "+resultado;
+    JOptionPane.showMessageDialog(null, msg);
+    }
+if(opt == 3){
+    calc1.operando1=Double.valueOf(JOptionPane.showInputDialog("Digite o operando 1:")); 
+    calc1.operando2=Double.valueOf(JOptionPane.showInputDialog("Digite o operando 2:"));
+    
+    double resultado = calc1.operando1 * calc1.operando2;
+    String msg = "O resultado é: "+resultado;
+    JOptionPane.showMessageDialog(null, msg);
+    }
+if(opt == 4){
+    calc1.operando1=Double.valueOf(JOptionPane.showInputDialog("Digite o operando 1:")); 
+    calc1.operando2=Double.valueOf(JOptionPane.showInputDialog("Digite o operando 2:"));
+    
+    double resultado = calc1.operando1 / calc1.operando2;
+    String msg = "O resultado é: "+resultado;
+    JOptionPane.showMessageDialog(null, msg);
+    }
+  }
+}
