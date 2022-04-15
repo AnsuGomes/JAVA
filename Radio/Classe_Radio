@@ -1,0 +1,30 @@
+package poo;
+public class Radio {
+    public boolean estaLigado = true ;
+    public int volume;
+    public double ajustarFreq;
+    
+    public void volume(int volume){
+    if (volume == 10 ){
+        System.out.println("Volume maximo.");
+    }else if (volume < 10 && volume > 0){
+        System.out.println("Volume: " + volume);
+    }else if (volume < 0 || volume > 10){
+        System.out.println("Volume não permitido!");
+    }else if (volume == 0){
+        System.out.println("Volume minimo.");
+    }
+}
+    
+    public void ajustarFreq(double ajustarFreq){
+        if (ajustarFreq > 534.7f && ajustarFreq < 1606.8f ){
+            System.out.println("Frequencia encontrada.");
+        }else{
+            System.out.println("Frequencia não encontrada.");
+        }
+    }
+    
+    
+    
+    
+}
