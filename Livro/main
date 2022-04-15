@@ -1,0 +1,23 @@
+package ex;
+public class Ex {
+    public static void main(String[] args) {
+        
+        Pessoa[] p = new Pessoa[2];
+        Livro[] l = new Livro[3];
+
+
+        p[0] = new Pessoa("Ansu", "M", 26);
+        p[1] = new Pessoa("Vanessa","F", 22);
+
+        l[0] = new Livro("A cabana", "JKL", 300, p[0]);
+        l[1] = new Livro("A culpa da Bruna", "Jim Pearson", 458, p[1]);
+        l[2] = new Livro("Busca das Bruxas", "Harvey Specter", 501, p[0]);
+
+        
+        l[0].abrir();
+        l[0].folhear(1);
+        l[0].avacarPag();
+        System.out.println(l[0].detalhes());
+    }
+    
+}
