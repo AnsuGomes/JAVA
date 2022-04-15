@@ -18,7 +18,7 @@ public class ExPOO {
 		        	
 	case 1:
         in.nextLine();
-	System.out.print("\nDigite o primeiro nome do funcionario: ");
+	System.out.print("\nDigite o nome do funcionario: ");
 	f.setNome(in.nextLine());
 	System.out.print("\nDigite o sobrenome do funcionario: ");
 	f.setSobrenome(in.nextLine());
