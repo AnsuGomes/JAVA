@@ -1,0 +1,41 @@
+package expoo;
+public class FunAss extends Funcionario{
+	
+	private double salarioSemanal;
+	
+	FuncionarioAssalariado(String nome, String sobrenome, double salarioSemanal){
+		
+		super(nome, sobrenome);
+		this.salarioSemanal = salarioSemanal;
+	}
+	
+	FuncionarioAssalariado(){
+		
+		
+	}
+
+	public double getSalarioSemanal() {
+		return salarioSemanal;
+	}
+
+	public void setSalarioSemanal(double salarioSemanal) {
+		this.salarioSemanal = salarioSemanal;
+	}
+	
+	public double ganhos() {
+		
+		this.salarioSemanal = salarioSemanal*4;
+		return salarioSemanal;
+	}
+	
+	
+	public String toString() {
+		
+		String funcionario = "Nome: "+getNome()+" "+getSobrenome()+" Matrícula: "+getMatricula();
+		
+		return funcionario;
+	}
+	
+		
+		
+	}
