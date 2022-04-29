@@ -1,0 +1,40 @@
+package expoo;
+
+public class FuncionarioHora extends Funcionario{
+	
+	private int horas;
+	private double valorDaHora;
+	
+	FuncionarioHora(String nome, String sobrenome,int horas, double valorDaHora){
+		super(nome,sobrenome);
+		this.horas = horas;
+		this.valorDaHora = valorDaHora;
+	}
+	
+	FuncionarioHora(){
+
+    }
+	
+	public int getHoras() {
+		return horas;
+	}
+	public void setHoras(int horas) {
+		this.horas = horas;
+	}
+	public double getValorDaHora() {
+		return valorDaHora;
+	}
+	public void setValorDaHora(double valorDaHora) {
+		this.valorDaHora = valorDaHora;
+	}
+	
+	public double ganhos() {	
+		double total = (horas * valorDaHora);
+		return total;
+    }
+	
+	public String toString() {
+		String funcionario = "Nome: "+getNome()+" "+getSobrenome()+" Matrícula: "+getMatricula();
+		return funcionario;
+	}
+}
