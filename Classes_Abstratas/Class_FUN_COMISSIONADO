@@ -1,0 +1,37 @@
+package expoo;
+
+import java.util.Scanner;
+
+public class FunComissao extends Funcionario {
+   private int vendas;
+   private double comissao;
+	
+public FunComissao(String nome, String sobrenome, double salario, int vendas){
+    super(nome, sobrenome, salario);
+    this.vendas = vendas;
+}
+
+FunComissao(){
+    
+}
+
+public double ganhos()	{
+    comissao = getSalario()+(vendas * 0.10);
+    this.comissao = comissao;
+    return comissao;
+}
+		
+public double getVendas() {
+    return vendas;
+}
+
+public void setVendas(int vendas) {
+    this.vendas = vendas;
+}
+
+public String toString() {
+	String funcionario = "Nome: "+getNome()+" "+getSobreome()+" Matrícula: "+getMatricula();
+    return funcionario;
+}
+        
+}
