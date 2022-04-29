@@ -27,8 +27,8 @@ public class ExPOO {
 		f.setSalario(in.nextDouble());			
 		System.out.print("\nQuantidade de vendas: ");
 		f.setVendas(in.nextInt()); 
-		System.out.println("\nNome do funcinario: "+f1.toString());		        												
-		System.out.println("\nSalario do funcionario: "+f1.ganhos());		        	
+		System.out.println("\nNome do funcinario: "+f.toString());		        												
+		System.out.println("\nSalario do funcionario: "+f.ganhos());		        	
 		break;
 		
 	case 2:
@@ -39,8 +39,8 @@ public class ExPOO {
 		fa.setSegundo_nome(in.nextLine());
 		System.out.print("\nQuanto o Funcionario ganha por semana?: ");
 		fa.setSalarioSemanal(in.nextDouble());						
-		System.out.println("\nNome do funcinario: "+f2.toString());		
-		System.out.println("\nSalario do funcionario: "+f2.ganhos());		
+		System.out.println("\nNome do funcinario: "+fa.toString());		
+		System.out.println("\nSalario do funcionario: "+fa.ganhos());		
 		break;
 		
 	case 3:		
@@ -53,8 +53,8 @@ public class ExPOO {
 		f1.setValorDaHora(in.nextDouble());			
 		System.out.print("\nHoras trabalhadas: ");
 		f1.setHoras(in.nextInt());	       						
-		System.out.println("\nNome do funcinario: "+f3.toString());		
-		System.out.println("\nSalario do funcionario: "+f3.ganhos());		
+		System.out.println("\nNome do funcinario: "+f1.toString());		
+		System.out.println("\nSalario do funcionario: "+f1.ganhos());		
 		break;
 				
 	default:		
