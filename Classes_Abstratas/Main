@@ -1,0 +1,47 @@
+package expoo;
+
+import java.util.Scanner;
+
+public class ExPOO {
+    public static void main(String[] args) {
+        
+    Scanner in = new Scanner(System.in);
+		    	
+    FunComissao f = new FunComissao();
+  
+		        
+    System.out.println("Escolha o tipo de funcionario: ");
+    System.out.println("1- Funcionario comum\n2- Funcionario Comissionado");
+		        	
+    int op = in.nextInt();	
+    switch(op) {
+		        	
+	case 1:
+        in.nextLine();
+	System.out.print("\nDigite o nome do funcionario: ");
+	f.setNome(in.nextLine());
+	System.out.print("\nDigite o sobrenome do funcionario: ");
+	f.setSobrenome(in.nextLine());
+	System.out.print("\nDigite o salario do funcionario: ");
+	f.setSalario(in.nextDouble());	 
+	System.out.println("\nNome do funcinario: "+ f.getNome()+" "+ f.getSobrenome());
+	System.out.println("\nSalario do funcionario: "+f.getSalario());
+	break;
+		        	
+	case 2:
+	in.nextLine();
+	System.out.print("\nDigite o nome do funcionario: ");
+	f.setNome(in.nextLine());
+	System.out.print("\nDigite o sobrenome do funcionario: ");
+	f.setSobrenome(in.nextLine());
+	System.out.print("\nDigite o salario do funcionario: ");
+	f.setSalario(in.nextDouble());	
+	System.out.print("\nDigite a quantidade de vendas do funcionario: ");
+	f.setVendas(in.nextInt()); 
+	System.out.println("\nNome do funcinario: "+f.getNome()+" "+f.getSobrenome());		        		
+	f.comissao();		        	
+	break;
+      
+        }
+    }
+}
