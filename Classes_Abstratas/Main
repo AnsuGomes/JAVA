@@ -9,7 +9,7 @@ public class ExPOO {
 		    	
     	FunComissao f = new FunComissao();
 	FunAss fa = new FunAss();
-	Funcionario f1 = new Funcionario();
+	Funcionario f1 = new Funcionario(); //Hora
 
   		        
     System.out.println("Escolha o tipo de funcionario: ");
@@ -46,13 +46,13 @@ public class ExPOO {
 	case 3:		
 		in.nextLine();		
 		System.out.print("\nQual o nome do funcionario: ");
-		f3.setPrimeiro_nome(in.nextLine());											
+		f1.setPrimeiro_nome(in.nextLine());											
 		System.out.print("\nQual o sobrenome do funcionario: ");
-		f3.setSegundo_nome(in.nextLine());
+		f1.setSegundo_nome(in.nextLine());
 		System.out.print("\nQuantidade que o funcionário ganha por hora: ");
-		f3.setValorDaHora(in.nextDouble());			
+		f1.setValorDaHora(in.nextDouble());			
 		System.out.print("\nHoras trabalhadas: ");
-		f3.setHoras(in.nextInt());	       						
+		f1.setHoras(in.nextInt());	       						
 		System.out.println("\nNome do funcinario: "+f3.toString());		
 		System.out.println("\nSalario do funcionario: "+f3.ganhos());		
 		break;
