@@ -20,13 +20,13 @@ public class ExPOO {
 	case 1:	        	
 		in.nextLine();	        
 		System.out.print("\nQual o nome do funcionario: ");
-		f1.setPrimeiro_nome(in.nextLine());
+		f.setPrimeiro_nome(in.nextLine());
 		System.out.print("\nQual o sobrenome do funcionario: ");
-		f1.setSegundo_nome(in.nextLine());		
+		f.setSegundo_nome(in.nextLine());		
 		System.out.print("\nQual o salario do funcionario: ");
-		f1.setSalario(in.nextDouble());			
+		f.setSalario(in.nextDouble());			
 		System.out.print("\nQuantidade de vendas: ");
-		f1.setVendas(in.nextInt()); 
+		f.setVendas(in.nextInt()); 
 		System.out.println("\nNome do funcinario: "+f1.toString());		        												
 		System.out.println("\nSalario do funcionario: "+f1.ganhos());		        	
 		break;
@@ -34,11 +34,11 @@ public class ExPOO {
 	case 2:
 		in.nextLine();
 		System.out.print("\nQual o nome do funcionario: ");
-		f2.setPrimeiro_nome(in.nextLine());							
+		fa.setPrimeiro_nome(in.nextLine());							
 		System.out.print("\nQual o sobrenome do funcionario: ");
-		f2.setSegundo_nome(in.nextLine());
+		fa.setSegundo_nome(in.nextLine());
 		System.out.print("\nQuanto o Funcionario ganha por semana?: ");
-		f2.setSalarioSemanal(in.nextDouble());						
+		fa.setSalarioSemanal(in.nextDouble());						
 		System.out.println("\nNome do funcinario: "+f2.toString());		
 		System.out.println("\nSalario do funcionario: "+f2.ganhos());		
 		break;
