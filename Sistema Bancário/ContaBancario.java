@@ -96,9 +96,9 @@ public class ContaBanco {
             Conta conta = encontrarConta(numconta);
             
             if (conta != null){
-                Double valorDeposito = 
+                Double valorSaque = 
                     Double.parseDouble(JOptionPane.showInputDialog("Qual o valor para o saque?"));
-                conta.Depositar(valorDeposito);
+                conta.Sacar(valorSaque);
                 JOptionPane.showMessageDialog(null,"Valor sacado com sucesso!");
             } else{
                 JOptionPane.showMessageDialog(null,"Conta não encontrada.");
